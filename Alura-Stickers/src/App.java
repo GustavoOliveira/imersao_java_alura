@@ -8,9 +8,12 @@ public class App {
 
         // String url = "https://alura-filmes.herokuapp.com/conteudos";
         // ExtratorConteudo extrator = new ExtratorConteudoImdb();
-
-        String url = "https://api.nasa.gov/planetary/apod?api_key=AaZVCluksUYd1Kzb15BWcSGWqagiIAFk6tf1J3CG&start_date=2022-05-01&end_date=2022-06-01";
-        ExtratorConteudo extrator = new ExtratorConteudoNasa();
+        
+        String url = "http://localhost:8080/linguagens";
+        ExtratorConteudo extrator = new ExtratorConteudoImdb();
+        
+        // String url = "https://api.nasa.gov/planetary/apod?api_key=AaZVCluksUYd1Kzb15BWcSGWqagiIAFk6tf1J3CG&start_date=2022-05-01&end_date=2022-06-01";
+        // ExtratorConteudo extrator = new ExtratorConteudoNasa();
 
         var http = new ClienteHttp();
         String json = http.buscaDados(url);
