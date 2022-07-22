@@ -33,9 +33,9 @@ public class GeradoraDeFigurinhas {
         graphics.setColor(Color.YELLOW);
 
         // escrever um frase na nova imagem
-        graphics.drawString("Muito Bom", 324, novaAltura - 50);
+        graphics.drawString("Muito Bom", largura/2, novaAltura - 50);
 
         // escreve a nova imagem em um arquivo
-        ImageIO.write(novaImagem, "png", new File("Alura-Stickers/saida/" + nomeAString));
+        ImageIO.write(novaImagem, "png", new File("saida/" + nomeAString));
     }
 } 
